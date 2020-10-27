@@ -1,8 +1,8 @@
-let latLong = [0, 0];
+const latLong = [0, 0];
 exports.handler = async event => {
-  const lat = event.queryStringParameters?.lat || 0;
-  const long = event.queryStringParameters?.long || 0;
-  latLong = [lat, long];
+  // const lat = event.queryStringParameters?.lat || 0;
+  // const long = event.queryStringParameters?.long || 0;
+  // latLong = [lat, long];
 
   const json = JSON.stringify(latLong);
   return {
